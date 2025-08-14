@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://greenessencei.github.io/greenessencei/sitemap.xml
