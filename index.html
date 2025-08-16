@@ -13,9 +13,9 @@
     <link rel="dns-prefetch" href="https://greenessencei.github.io">
     
     <!-- Pré-carregamento de recursos críticos -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" as="image" href="https://greenessencei.github.io/greenessencei/image/nerve-health-support-neuropathy-relief-nerve-supplement.webp">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"></noscript>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"></noscript>
     
     <!-- Google Analytics Otimizado -->
     <script>
@@ -79,11 +79,27 @@
     <style>
         :root {
             --primary: #4a8b4c;
+            --primary-dark: #3a6b3a;
+            --primary-light: #e8f5e9;
             --secondary: #f7c948;
+            --secondary-dark: #e6b301;
             --accent: #e67e22;
+            --accent-dark: #d35400;
             --light: #f9f9f7;
             --dark: #2c3e50;
+            --dark-light: #34495e;
             --text: #34495e;
+            --text-light: #7f8c8d;
+            --white: #ffffff;
+            --gray: #ecf0f1;
+            --transition: all 0.3s ease;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 20px rgba(0,0,0,0.1);
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --radius-full: 50px;
         }
         
         * {
@@ -92,24 +108,43 @@
             box-sizing: border-box;
         }
         
+        html {
+            scroll-behavior: smooth;
+        }
+        
         body {
-            font-family: system-ui, -apple-system, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             color: var(--text);
             background-color: var(--light);
+            font-size: 1rem;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--dark);
+            margin-bottom: 1rem;
         }
         
         .container {
-            width: 90%;
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 1.5rem;
         }
         
+        /* Header Styles */
         header {
-            background: linear-gradient(135deg, var(--primary), #3a6b3a);
-            color: white;
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            padding: 1.2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-md);
         }
         
         .header-content {
@@ -121,33 +156,51 @@
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
-            color: white;
+            color: var(--white);
             text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
         }
         
         nav ul {
             display: flex;
             list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 2rem;
+            gap: 1.8rem;
         }
         
         nav ul li a {
-            color: white;
+            color: var(--white);
             text-decoration: none;
             font-weight: 500;
-            transition: all 0.3s ease;
+            transition: var(--transition);
+            font-size: 1rem;
+            padding: 0.5rem 0;
+            position: relative;
         }
         
         nav ul li a:hover {
             color: var(--secondary);
         }
         
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary);
+            transition: var(--transition);
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
         .hero {
             background: url('https://greenessencei.github.io/greenessencei/image/nerve-health-support-neuropathy-relief-nerve-supplement.webp') no-repeat center center/cover;
-            height: 60vh;
+            height: 70vh;
+            min-height: 500px;
             display: flex;
             align-items: center;
             position: relative;
@@ -166,39 +219,45 @@
         .hero-content {
             position: relative;
             z-index: 1;
-            color: white;
+            color: var(--white);
             max-width: 600px;
+            padding: 2rem;
         }
         
         .hero h1 {
             font-size: 2.5rem;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-            font-family: 'Poppins', sans-serif;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
         }
         
         .hero p {
             font-size: 1.1rem;
             margin-bottom: 2rem;
+            opacity: 0.9;
         }
         
+        /* Button Styles */
         .btn {
             display: inline-block;
             background-color: var(--accent);
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 30px;
+            color: var(--white);
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius-full);
             text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
+            font-weight: 600;
+            transition: var(--transition);
             border: none;
             cursor: pointer;
+            font-size: 1rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
         }
         
         .btn:hover {
-            background-color: #d35400;
+            background-color: var(--accent-dark);
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: var(--shadow-md);
         }
         
         .btn-secondary {
@@ -207,15 +266,17 @@
         }
         
         .btn-secondary:hover {
-            background-color: #e6b301;
+            background-color: var(--secondary-dark);
         }
         
+        /* Main Content */
         main {
             padding: 4rem 0;
         }
         
         section {
             margin-bottom: 4rem;
+            scroll-margin-top: 6rem;
         }
         
         h2 {
@@ -223,7 +284,7 @@
             font-size: 2rem;
             margin-bottom: 1.5rem;
             position: relative;
-            padding-bottom: 0.5rem;
+            padding-bottom: 0.8rem;
         }
         
         h2::after {
@@ -231,44 +292,74 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 80px;
+            width: 70px;
             height: 3px;
             background-color: var(--secondary);
+            border-radius: var(--radius-full);
         }
         
         h3 {
-            color: var(--dark);
-            font-size: 1.5rem;
-            margin: 1.5rem 0 1rem;
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem;
         }
         
         h4 {
-            color: var(--dark);
-            font-size: 1.2rem;
-            margin: 1rem 0 0.5rem;
+            font-size: 1.3rem;
+            margin: 1.2rem 0 0.8rem;
         }
         
         p {
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            line-height: 1.7;
         }
         
-        .ingredient-cards {
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        
+        /* Grid Layouts */
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
+            gap: 1.5rem;
             margin: 2rem 0;
         }
         
+        .symptoms-grid {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        
+        .ingredient-cards {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        
+        .features-grid {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        
+        .stats-grid {
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            text-align: center;
+        }
+        
+        /* Card Styles */
         .card {
-            background-color: white;
-            border-radius: 10px;
+            background-color: var(--white);
+            border-radius: var(--radius-md);
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
         }
         
         .card:hover {
             transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
         }
         
         .card-img {
@@ -284,7 +375,7 @@
         }
         
         .card:hover .card-img img {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
         
         .card-content {
@@ -296,15 +387,124 @@
             margin-top: 0;
         }
         
+        /* Symptom Card */
+        .symptom-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            height: 100%;
+        }
+        
+        .symptom-card h4 {
+            color: var(--primary);
+        }
+        
+        .symptom-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .symptom-card li {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .symptom-card li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+        
+        /* Treatment Options */
+        .treatment-options {
+            background: var(--primary-light);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+        
+        .treatment-options h3 {
+            color: var(--primary);
+        }
+        
+        .treatment-options ul {
+            margin-top: 1rem;
+        }
+        
+        .treatment-options li {
+            position: relative;
+            padding-left: 1.8rem;
+        }
+        
+        .treatment-options li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        /* Science Section */
+        .science-section {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            margin: 2rem 0;
+        }
+        
+        .science-section ul {
+            margin-top: 1rem;
+        }
+        
+        .science-section li {
+            position: relative;
+            padding-left: 1.8rem;
+        }
+        
+        .science-section li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+        
+        /* Stats Grid */
+        .stat-item {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .stat-number {
+            font-size: 2.2rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Feature Card */
+        .feature-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            height: 100%;
+        }
+        
+        /* CTA Section */
         .cta-section {
-            background: linear-gradient(135deg, var(--primary), #3a6b3a);
-            color: white;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
             padding: 4rem 0;
             text-align: center;
         }
         
         .cta-section h2 {
-            color: white;
+            color: var(--white);
         }
         
         .cta-section h2::after {
@@ -325,9 +525,9 @@
         }
         
         .benefits-list li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
             position: relative;
-            padding-left: 1.5rem;
+            padding-left: 2rem;
         }
         
         .benefits-list li::before {
@@ -338,23 +538,30 @@
             font-weight: bold;
         }
         
+        /* Footer */
         footer {
             background-color: var(--dark);
-            color: white;
-            padding: 3rem 0 1rem;
+            color: var(--white);
+            padding: 3rem 0 0;
         }
         
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-bottom: 2rem;
         }
         
         .footer-column h3 {
-            color: white;
-            margin-bottom: 1rem;
+            color: var(--white);
+            margin-bottom: 1.2rem;
             font-size: 1.2rem;
+        }
+        
+        .footer-column p {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
         }
         
         .footer-column ul {
@@ -362,13 +569,13 @@
         }
         
         .footer-column ul li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.6rem;
         }
         
         .footer-column ul li a {
-            color: #ecf0f1;
+            color: var(--gray);
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: var(--transition);
         }
         
         .footer-column ul li a:hover {
@@ -377,88 +584,60 @@
         
         .copyright {
             text-align: center;
-            padding-top: 1rem;
+            padding: 1.5rem 0;
             border-top: 1px solid rgba(255,255,255,0.1);
-        }
-        
-        /* New styles for expanded content */
-        .symptoms-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        
-        .symptom-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-        }
-        
-        .treatment-options {
-            background: #f0f7f0;
-            padding: 2rem;
-            border-radius: 10px;
-            margin: 2rem 0;
-        }
-        
-        .treatment-options h3 {
-            color: var(--primary);
-        }
-        
-        .science-section {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
-            margin: 2rem 0;
-        }
-        
-        .reference-list {
-            font-size: 0.9rem;
             margin-top: 2rem;
+            color: var(--gray);
+            font-size: 0.9rem;
         }
         
-        .reference-list li {
-            margin-bottom: 0.5rem;
-        }
-        
+        /* Responsive Styles */
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
                 text-align: center;
+                gap: 1rem;
             }
             
             nav ul {
-                margin-top: 1rem;
+                flex-wrap: wrap;
                 justify-content: center;
+                gap: 1rem;
+                margin-top: 1rem;
             }
             
-            nav ul li {
-                margin: 0 0.5rem;
+            .hero {
+                height: 60vh;
+                min-height: 400px;
+                text-align: center;
             }
             
             .hero h1 {
                 font-size: 2rem;
             }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
         }
         
-        /* Otimizações de performance */
-        @font-face {
-            font-family: 'Poppins';
-            font-display: swap;
-        }
-        
-        * {
-            will-change: transform, opacity;
-        }
-        
-        .card-img img {
-            width: 100%;
-            height: 200px;
-            aspect-ratio: 1/1;
-            object-fit: cover;
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .btn {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -472,7 +651,7 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="#" class="logo">Green Essencei</a>
+                <a href="#" class="logo">Green Essence</a>
                 <nav>
                     <ul>
                         <li><a href="#about">About Neuropathy</a></li>
@@ -502,7 +681,7 @@
             <p>Neuropathy, or nerve damage, affects approximately 20 million Americans, with symptoms ranging from mild tingling to debilitating pain. This condition occurs when peripheral nerves (those outside the brain and spinal cord) become damaged, disrupting communication between your brain and other parts of your body.</p>
             
             <h3>Common Causes of Neuropathy</h3>
-            <div class="symptoms-grid">
+            <div class="grid symptoms-grid">
                 <div class="symptom-card">
                     <h4>Diabetes</h4>
                     <p>High blood sugar damages nerve fibers, causing diabetic neuropathy—the most common type affecting 60-70% of diabetics.</p>
@@ -528,7 +707,7 @@
             <h2>Neuropathy Symptoms: Recognizing Nerve Damage</h2>
             <p>Neuropathy symptoms vary depending on which nerves are affected (sensory, motor, or autonomic) and may develop gradually or appear suddenly. The most common symptoms include:</p>
             
-            <div class="symptoms-grid">
+            <div class="grid symptoms-grid">
                 <div class="symptom-card">
                     <h4>Sensory Symptoms</h4>
                     <ul>
@@ -601,10 +780,10 @@
             <h2>The Science-Backed Ingredients in AriaLief</h2>
             <p>AriaLief combines clinically-proven ingredients at optimal dosages to address neuropathy from multiple angles. Each component was selected based on rigorous scientific research demonstrating efficacy for nerve health.</p>
             
-            <div class="ingredient-cards">
+            <div class="grid ingredient-cards">
                 <div class="card">
                     <div class="card-img">
-                        <img src="https://greenessencei.github.io/greenessencei/imge/magnesium-glycinate-magnesium-supplement-muscle-relaxation-sleep-support.webp" alt="Magnesium Glycinate for nerve calming and muscle relaxation" loading="lazy">
+                        <img src="https://greenessencei.github.io/greenessencei/image/magnesium-glycinate-magnesium-supplement-muscle-relaxation-sleep-support.webp" alt="Magnesium Glycinate for nerve calming and muscle relaxation" loading="lazy" width="400" height="300">
                     </div>
                     <div class="card-content">
                         <h3>Magnesium Glycinate (200mg)</h3>
@@ -615,7 +794,7 @@
                 
                 <div class="card">
                     <div class="card-img">
-                        <img src="https://greenessencei.github.io/greenessencei/imge/alpha-lipoic-acid-antioxidant-energy-metabolism-nerve-health-blood-sugar-.webp" alt="Alpha-Lipoic Acid for nerve protection and regeneration" loading="lazy">
+                        <img src="https://greenessencei.github.io/greenessencei/image/alpha-lipoic-acid-antioxidant-energy-metabolism-nerve-health-blood-sugar-.webp" alt="Alpha-Lipoic Acid for nerve protection and regeneration" loading="lazy" width="400" height="300">
                     </div>
                     <div class="card-content">
                         <h3>Alpha-Lipoic Acid (300mg)</h3>
@@ -626,7 +805,7 @@
                 
                 <div class="card">
                     <div class="card-img">
-                        <img src="https://greenessencei.github.io/greenessencei/imge/turmeric-curcumin-anti-inflammatory-antioxidant-joint-health-digestion-support.webp" alt="Turmeric Curcumin for nerve inflammation reduction" loading="lazy">
+                        <img src="https://greenessencei.github.io/greenessencei/image/turmeric-curcumin-anti-inflammatory-antioxidant-joint-health-digestion-support.webp" alt="Turmeric Curcumin for nerve inflammation reduction" loading="lazy" width="400" height="300">
                     </div>
                     <div class="card-content">
                         <h3>Turmeric Curcumin (150mg)</h3>
@@ -636,10 +815,10 @@
                 </div>
             </div>
             
-            <div class="ingredient-cards">
+            <div class="grid ingredient-cards">
                 <div class="card">
                     <div class="card-img">
-                        <img src="https://greenessencei.github.io/greenessencei/imge/palmitoylethanolamide-pea-natural-anti-inflammatory-pain-relief-nerve-health-immune.webp" alt="PEA for natural pain relief" loading="lazy">
+                        <img src="https://greenessencei.github.io/greenessencei/image/palmitoylethanolamide-pea-natural-anti-inflammatory-pain-relief-nerve-health-immune.webp" alt="PEA for natural pain relief" loading="lazy" width="400" height="300">
                     </div>
                     <div class="card-content">
                         <h3>Palmitoylethanolamide (400mg)</h3>
@@ -650,7 +829,7 @@
                 
                 <div class="card">
                     <div class="card-img">
-                        <img src="https://greenessencei.github.io/greenessencei/imge/coenzyme-q10-ubiquinone-ubiquinol-antioxidant-heart-health-energy-production.webp" alt="CoQ10 for nerve cell energy" loading="lazy">
+                        <img src="https://greenessencei.github.io/greenessencei/image/coenzyme-q10-ubiquinone-ubiquinol-antioxidant-heart-health-energy-production.webp" alt="CoQ10 for nerve cell energy" loading="lazy" width="400" height="300">
                     </div>
                     <div class="card-content">
                         <h3>L-Carnitine & CoQ10</h3>
@@ -661,7 +840,7 @@
                 
                 <div class="card">
                     <div class="card-img">
-                        <img src="https://greenessencei.github.io/greenessencei/imge/butcher's-broom-circulation-support-leg-health-hemorrhoid%20-relief.jpg" alt="Butcher's Broom for nerve circulation" loading="lazy">
+                        <img src="https://greenessencei.github.io/greenessencei/image/butcher's-broom-circulation-support-leg-health-hemorrhoid%20-relief.jpg" alt="Butcher's Broom for nerve circulation" loading="lazy" width="400" height="300">
                     </div>
                     <div class="card-content">
                         <h3>Butcher's Broom</h3>
@@ -688,20 +867,20 @@
             <h2>Why AriaLief Stands Out for Neuropathy Relief</h2>
             <p>Unlike single-ingredient solutions that address only one aspect of neuropathy, AriaLief's comprehensive formula works on multiple pathways simultaneously:</p>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.08);">
+            <div class="grid features-grid">
+                <div class="feature-card">
                     <h3>1. Inflammation Control</h3>
                     <p>PEA and curcumin target multiple inflammatory pathways specific to nerve tissue without suppressing the entire immune system</p>
                 </div>
-                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.08);">
+                <div class="feature-card">
                     <h3>2. Oxidative Defense</h3>
                     <p>ALA and CoQ10 provide layered antioxidant protection against free radicals damaging nerve cells</p>
                 </div>
-                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.08);">
+                <div class="feature-card">
                     <h3>3. Nerve Repair</h3>
                     <p>L-Carnitine fuels the regeneration process by optimizing mitochondrial function in nerve cells</p>
                 </div>
-                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.08);">
+                <div class="feature-card">
                     <h3>4. Symptom Relief</h3>
                     <p>Magnesium and Butcher's Broom provide immediate support for tingling, pain, and circulation issues</p>
                 </div>
@@ -709,22 +888,22 @@
             
             <h3>Clinical Results from AriaLief Users</h3>
             <p>In a 90-day survey of AriaLief customers reporting various types of neuropathy:</p>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; text-align: center;">
-                <div>
-                    <div style="font-size: 2rem; color: var(--primary); font-weight: 700;">83%</div>
-                    <p>reported reduced tingling/burning sensations</p>
+            <div class="grid stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">83%</div>
+                    <p>reduced tingling/burning sensations</p>
                 </div>
-                <div>
-                    <div style="font-size: 2rem; color: var(--primary); font-weight: 700;">76%</div>
-                    <p>experienced improved sleep quality</p>
+                <div class="stat-item">
+                    <div class="stat-number">76%</div>
+                    <p>improved sleep quality</p>
                 </div>
-                <div>
-                    <div style="font-size: 2rem; color: var(--primary); font-weight: 700;">68%</div>
-                    <p>noticed better balance and mobility</p>
+                <div class="stat-item">
+                    <div class="stat-number">68%</div>
+                    <p>better balance and mobility</p>
                 </div>
-                <div>
-                    <div style="font-size: 2rem; color: var(--primary); font-weight: 700;">91%</div>
-                    <p>said they would recommend AriaLief</p>
+                <div class="stat-item">
+                    <div class="stat-number">91%</div>
+                    <p>would recommend AriaLief</p>
                 </div>
             </div>
             
@@ -757,11 +936,11 @@
         </div>
     </section>
     
-    <footer id="contact">
+    <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Green Essencei</h3>
+                    <h3>Green Essence</h3>
                     <p>Your trusted source for science-backed natural health solutions and holistic wellness approaches.</p>
                 </div>
                 
@@ -775,34 +954,10 @@
                         <li><a href="#solution">AriaLief Solution</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-column">
-                    <h3>Scientific References</h3>
-                    <ul class="reference-list">
-                        <li><strong>Magnesium Glycinate:</strong>
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/31273632/" target="_blank">PubMed 31273632</a> (Nutrients, 2019)
-                        </li>
-                        <li><strong>Alpha-Lipoic Acid:</strong>
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/26446338/" target="_blank">PubMed 26446338</a> (Diabetes Care, 2016)
-                        </li>
-                        <li><strong>Curcumin:</strong>
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/25277322/" target="_blank">PubMed 25277322</a> (Eur J Pharmacol, 2014)
-                        </li>
-                        <li><strong>PEA:</strong>
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/26502845/" target="_blank">PubMed 26502845</a> (CNS Neurol Disord, 2016)
-                        </li>
-                        <li><strong>L-Carnitine:</strong>
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/15853480/" target="_blank">PubMed 15853480</a> (J Peripher Nerv Syst, 2005)
-                        </li>
-                        <li><strong>Butcher's Broom:</strong>
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/12180793/" target="_blank">PubMed 12180793</a> (Angiology, 2002)
-                        </li>
-                    </ul>
-                </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2025 Green Essencei. All rights reserved.</p>
+                <p>&copy; 2025 Green Essence. All rights reserved.</p>
                 <p><small>Note: The information provided on this website is for educational purposes only and is not intended as medical advice. Always consult with a healthcare professional before starting any new treatment.</small></p>
             </div>
         </div>
@@ -812,7 +967,7 @@
     <script>
         // Carregar fontes após a renderização inicial
         if ('fonts' in document) {
-            document.fonts.load('1em Poppins').then(function() {
+            document.fonts.load('1em Montserrat').then(function() {
                 document.body.classList.add('fonts-loaded');
             });
         }
@@ -820,3 +975,23 @@
         // Otimização para imagens lazy
         document.addEventListener('DOMContentLoaded', function() {
             const lazyImages = [].slice.call(document.querySelectorAll('img[loading="lazy"]'));
+            
+            if ('IntersectionObserver' in window) {
+                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            let lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
