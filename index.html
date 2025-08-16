@@ -1,1014 +1,705 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Tags Essenciais -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!-- Pré-conexões para melhor performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="dns-prefetch" href="https://greenessencei.github.io">
-    
-    <!-- Pré-carregamento de recursos críticos -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" as="image" href="https://greenessencei.github.io/greenessencei/image/nerve-health-support-neuropathy-relief-nerve-supplement.webp">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"></noscript>
-    
-    <!-- Google Analytics Otimizado -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        document.addEventListener('DOMContentLoaded', function() {
-            var script = document.createElement('script');
-            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-EJZFYXEW6D';
-            script.async = true;
-            document.head.appendChild(script);
-            gtag('js', new Date());
-            gtag('config', 'G-EJZFYXEW6D');
-        });
-    </script>
-    
-    <meta name="google-site-verification" content="dS_2kFBEn_lCXXtPWlErXA3Bt5L3B66CEoH9yTyMb1w" />
-    <meta name="description" content="Plant-based supplement for nerve pain. 100% natural ingredients like alpha-lipoic acid, turmeric, and magnesium glycinate to relieve neuropathy symptoms and support nerve regeneration.">
-    <meta name="keywords" content="neuropathic pain treatment, nerve damage solutions, natural neuropathy relief, AriaLief review, sciatica remedies, nerve regeneration supplements">
-    <meta name="author" content="GreenEssencei">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Neuropathy Relief: Science-Backed Natural Solutions | GreenEssencei">
-    <meta property="og:description" content="Discover AriaLief's clinically-proven formula for nerve pain relief. Learn about neuropathy causes, symptoms, and natural treatments backed by medical research.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://greenessencei.github.io/greenessencei/">
-    <meta property="og:image" content="https://greenessencei.github.io/greenessencei/imge/capa.webp">
-    <meta property="og:locale" content="en_US">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Natural Neuropathy Treatment: AriaLief Formula | Green Essence">
-    <meta name="twitter:description" content="Effective plant-based solution for nerve pain with alpha-lipoic acid, turmeric, and magnesium glycinate. Clinically-studied ingredients for neuropathy relief.">
-    <meta name="twitter:image" content="https://greenessencei.github.io/greenessencei/imge/capa.webp">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://greenessencei.github.io/greenessencei/">
-    <title>Neuropathy Treatment: Natural Solutions for Nerve Pain Relief | Green Essence</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Green Essence",
-        "url": "https://greenessencei.github.io/greenessencei/",
-        "inLanguage": "en-US",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://greenessencei.github.io/greenessencei/?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-    </script>
-    
-    <!-- CSS Inline Crítico -->
+    <title>Neuropathy Relief: Science-Backed Natural Solutions | GreenEssencei</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
-            --primary: #4a8b4c;
-            --secondary: #f7c948;
-            --accent: #e67e22;
-            --light: #f9f9f7;
-            --dark: #2c3e50;
-            --text: #34495e;
+        .gradient-bg {
+            background: linear-gradient(135deg, #f0fff4 0%, #e6fffa 100%);
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        .hero-pattern {
+            background-image: radial-gradient(#38a169 0.5px, transparent 0.5px), radial-gradient(#38a169 0.5px, #f0fff4 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
         }
-        
-        body {
-            font-family: 'Open Sans', sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            background-color: var(--light);
-            font-size: 1rem;
-        }
-        
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 600;
-        }
-        
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        
-        header {
-            background: linear-gradient(135deg, var(--primary), #3a6b3a);
-            color: white;
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: white;
-            text-decoration: none;
-            font-family: 'Playfair Display', serif;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 2rem;
-        }
-        
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            font-size: 1rem;
-        }
-        
-        nav ul li a:hover {
-            color: var(--secondary);
-        }
-        
-        .hero {
-            background: url('https://greenessencei.github.io/greenessencei/image/nerve-health-support-neuropathy-relief-nerve-supplement.webp') no-repeat center center/cover;
-            height: 70vh;
-            min-height: 500px;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.5);
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            color: white;
-            max-width: 600px;
-            padding: 2rem;
-            background-color: rgba(0,0,0,0.6);
-            border-radius: 10px;
-        }
-        
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            background-color: var(--accent);
-            color: white;
-            padding: 0.8rem 1.8rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            text-align: center;
-        }
-        
-        .btn:hover {
-            background-color: #d35400;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        .btn-secondary {
-            background-color: var(--secondary);
-            color: var(--dark);
-        }
-        
-        .btn-secondary:hover {
-            background-color: #e6b301;
-        }
-        
-        main {
-            padding: 4rem 0;
-        }
-        
-        section {
-            margin-bottom: 4rem;
-            scroll-margin-top: 100px;
-        }
-        
-        h2 {
-            color: var(--primary);
-            font-size: 2.2rem;
-            margin-bottom: 1.8rem;
-            position: relative;
-            padding-bottom: 0.8rem;
-        }
-        
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 80px;
-            height: 3px;
-            background-color: var(--secondary);
-        }
-        
-        h3 {
-            color: var(--dark);
-            font-size: 1.7rem;
-            margin: 2rem 0 1.2rem;
-        }
-        
-        h4 {
-            color: var(--dark);
-            font-size: 1.3rem;
-            margin: 1.2rem 0 0.8rem;
-        }
-        
-        p {
-            margin-bottom: 1.2rem;
-            font-size: 1.05rem;
-            line-height: 1.7;
-        }
-        
-        ul, ol {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
-        }
-        
-        li {
-            margin-bottom: 0.5rem;
-        }
-        
-        .ingredient-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        
-        .card {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-        }
-        
-        .card-img {
-            height: 220px;
-            overflow: hidden;
-        }
-        
-        .card-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .card:hover .card-img img {
-            transform: scale(1.05);
-        }
-        
-        .card-content {
-            padding: 1.8rem;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .card h3 {
-            color: var(--primary);
-            margin-top: 0;
-            font-size: 1.4rem;
-        }
-        
-        .card p {
-            margin-bottom: 1rem;
-            flex: 1;
-        }
-        
-        .card p strong {
-            color: var(--dark);
-        }
-        
-        .cta-section {
-            background: linear-gradient(135deg, var(--primary), #3a6b3a);
-            color: white;
-            padding: 5rem 0;
-            text-align: center;
-        }
-        
-        .cta-section h2 {
-            color: white;
-        }
-        
-        .cta-section h2::after {
-            background-color: var(--secondary);
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        .cta-content {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        .benefits-list {
-            text-align: left;
-            margin: 2.5rem auto;
-            max-width: 600px;
-        }
-        
-        .benefits-list li {
-            margin-bottom: 0.8rem;
-            position: relative;
-            padding-left: 2rem;
-            font-size: 1.1rem;
-        }
-        
-        .benefits-list li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--secondary);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-        
-        footer {
-            background-color: var(--dark);
-            color: white;
-            padding: 4rem 0 1.5rem;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-        
-        .footer-column h3 {
-            color: white;
-            margin-bottom: 1.5rem;
-            font-size: 1.3rem;
-        }
-        
-        .footer-column p, .footer-column ul li a {
-            color: #ecf0f1;
-            opacity: 0.9;
-            line-height: 1.7;
-        }
-        
-        .footer-column ul {
-            list-style: none;
-        }
-        
-        .footer-column ul li {
-            margin-bottom: 0.8rem;
-        }
-        
-        .footer-column ul li a {
-            text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 1rem;
-        }
-        
-        .footer-column ul li a:hover {
-            color: var(--secondary);
-            opacity: 1;
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 1.5rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-        
-        /* New styles for expanded content */
-        .symptoms-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 2.5rem 0;
-        }
-        
-        .symptom-card {
-            background: white;
-            padding: 1.8rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
-        }
-        
-        .symptom-card:hover {
+        .ingredient-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
-        
-        .treatment-options {
-            background: #f0f7f0;
-            padding: 2.5rem;
-            border-radius: 12px;
-            margin: 2.5rem 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        
-        .treatment-options h3 {
-            color: var(--primary);
-            margin-top: 0;
-        }
-        
-        .treatment-options ul {
-            margin-top: 1rem;
-        }
-        
-        .treatment-options li {
-            margin-bottom: 0.8rem;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-        
-        .treatment-options li::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: var(--primary);
-            font-weight: bold;
-        }
-        
-        .science-section {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            margin: 3rem 0;
-        }
-        
-        .science-section ul {
-            margin-top: 1.5rem;
-        }
-        
-        .science-section li {
-            margin-bottom: 1rem;
-            padding-left: 1.5rem;
+        .stats-item {
             position: relative;
         }
-        
-        .science-section li::before {
-            content: '→';
+        .stats-item:not(:last-child):after {
+            content: "";
             position: absolute;
-            left: 0;
-            color: var(--primary);
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-            text-align: center;
-        }
-        
-        .stat-item {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-        }
-        
-        .stat-number {
-            font-size: 2.5rem;
-            color: var(--primary);
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            font-family: 'Playfair Display', serif;
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        
-        .feature-card {
-            background: white;
-            padding: 1.8rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .feature-card h3 {
-            color: var(--primary);
-            margin-top: 0;
-            font-size: 1.4rem;
-        }
-        
-        /* Otimizações de performance */
-        @font-face {
-            font-family: 'Open Sans';
-            font-display: swap;
-        }
-        
-        @font-face {
-            font-family: 'Playfair Display';
-            font-display: swap;
-        }
-        
-        /* Responsividade */
-        @media (max-width: 992px) {
-            .hero h1 {
-                font-size: 2.4rem;
-            }
-            
-            h2 {
-                font-size: 2rem;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            nav ul {
-                margin-top: 1.5rem;
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-            
-            nav ul li {
-                margin: 0.5rem 1rem;
-            }
-            
-            .hero {
-                height: 60vh;
-                min-height: 400px;
-            }
-            
-            .hero-content {
-                max-width: 100%;
-                padding: 1.5rem;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-            }
-            
-            .ingredient-cards {
-                grid-template-columns: 1fr;
-            }
-            
-            .treatment-options, .science-section {
-                padding: 1.5rem;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .btn {
-                display: block;
-                width: 100%;
-                padding: 1rem;
-            }
-            
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 50%;
+            width: 1px;
+            background-color: #e2e8f0;
         }
     </style>
 </head>
-<body>
-    <!-- Imagem LCP pré-carregada -->
-    <img src="https://greenessencei.github.io/greenessencei/image/nerve-health-support-neuropathy-relief-nerve-supplement.webp" 
-         alt="Natural neuropathy relief" 
-         style="display:none" 
-         fetchpriority="high">
-    
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="#" class="logo">Green Essence</a>
-                <nav>
-                    <ul>
-                        <li><a href="#about">About Neuropathy</a></li>
-                        <li><a href="#symptoms">Symptoms</a></li>
-                        <li><a href="#treatments">Treatments</a></li>
-                        <li><a href="#ingredients">Key Ingredients</a></li>
-                        <li><a href="#solution">AriaLief Solution</a></li>
+<body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header class="gradient-bg border-b border-green-200">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-leaf text-3xl text-green-600 mr-3"></i>
+                    <h1 class="text-2xl font-bold text-green-800">GreenEssencei</h1>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#" class="text-green-700 hover:text-green-900 font-medium">Home</a></li>
+                        <li><a href="#" class="text-green-700 hover:text-green-900 font-medium">About</a></li>
+                        <li><a href="#" class="text-green-700 hover:text-green-900 font-medium">Products</a></li>
+                        <li><a href="#" class="text-green-700 hover:text-green-900 font-medium">Research</a></li>
+                        <li><a href="#" class="text-green-700 hover:text-green-900 font-medium">Contact</a></li>
                     </ul>
                 </nav>
+                <button class="md:hidden text-green-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
         </div>
     </header>
-    
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Natural Neuropathy Treatment: Science-Backed Solutions for Nerve Pain Relief</h1>
-                <p>Discover how AriaLief's clinically-studied formula addresses the root causes of neuropathy through targeted nutrition, nerve protection, and regeneration support. Learn about evidence-based treatments for lasting relief.</p>
-                <a href="#solution" class="btn">Learn About AriaLief</a>
-            </div>
-        </div>
-    </section>
-    
-    <main class="container">
-        <section id="about">
-            <h2>Understanding Neuropathy: Causes and Risk Factors</h2>
-            <p>Neuropathy, or nerve damage, affects approximately 20 million Americans, with symptoms ranging from mild tingling to debilitating pain. This condition occurs when peripheral nerves (those outside the brain and spinal cord) become damaged, disrupting communication between your brain and other parts of your body.</p>
-            
-            <h3>Common Causes of Neuropathy</h3>
-            <div class="symptoms-grid">
-                <div class="symptom-card">
-                    <h4>Diabetes</h4>
-                    <p>High blood sugar damages nerve fibers, causing diabetic neuropathy—the most common type affecting 60-70% of diabetics.</p>
-                </div>
-                <div class="symptom-card">
-                    <h4>Vitamin Deficiencies</h4>
-                    <p>Lack of B vitamins (especially B12), vitamin E, and niacin can impair nerve function and repair mechanisms.</p>
-                </div>
-                <div class="symptom-card">
-                    <h4>Autoimmune Diseases</h4>
-                    <p>Conditions like rheumatoid arthritis and lupus cause inflammation that attacks nerve tissues.</p>
-                </div>
-                <div class="symptom-card">
-                    <h4>Toxins & Medications</h4>
-                    <p>Chemotherapy drugs, alcohol abuse, and heavy metal exposure can be neurotoxic.</p>
-                </div>
-            </div>
-            
-            <p>Other risk factors include physical trauma, repetitive stress injuries, infections (like shingles), and genetic predispositions. Understanding the underlying cause is crucial for effective treatment.</p>
-        </section>
-        
-        <section id="symptoms">
-            <h2>Neuropathy Symptoms: Recognizing Nerve Damage</h2>
-            <p>Neuropathy symptoms vary depending on which nerves are affected (sensory, motor, or autonomic) and may develop gradually or appear suddenly. The most common symptoms include:</p>
-            
-            <div class="symptoms-grid">
-                <div class="symptom-card">
-                    <h4>Sensory Symptoms</h4>
-                    <ul>
-                        <li>Tingling or "pins and needles"</li>
-                        <li>Burning or freezing pain</li>
-                        <li>Hypersensitivity to touch</li>
-                        <li>Numbness in hands/feet</li>
-                    </ul>
-                </div>
-                <div class="symptom-card">
-                    <h4>Motor Symptoms</h4>
-                    <ul>
-                        <li>Muscle weakness</li>
-                        <li>Loss of coordination</li>
-                        <li>Muscle twitching</li>
-                        <li>Paralysis (severe cases)</li>
-                    </ul>
-                </div>
-                <div class="symptom-card">
-                    <h4>Autonomic Symptoms</h4>
-                    <ul>
-                        <li>Blood pressure fluctuations</li>
-                        <li>Digestive issues</li>
-                        <li>Excessive sweating</li>
-                        <li>Bladder dysfunction</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <p>Many patients describe neuropathy pain as a constant burning sensation, electric shocks, or the feeling of wearing an invisible glove or sock. Symptoms often worsen at night, significantly impacting sleep quality and daily functioning.</p>
-        </section>
-        
-        <section id="treatments">
-            <h2>Neuropathic Pain Treatment Options</h2>
-            <p>Effective neuropathy management typically requires a multi-modal approach addressing both symptoms and underlying causes. Treatment options fall into three main categories:</p>
-            
-            <div class="treatment-options">
-                <h3>Medical Treatments</h3>
-                <ul>
-                    <li><strong>Prescription medications:</strong> Anticonvulsants (gabapentin, pregabalin), antidepressants (duloxetine), and topical creams (capsaicin, lidocaine)</li>
-                    <li><strong>Physical therapy:</strong> Improves strength, balance, and circulation to affected areas</li>
-                    <li><strong>Transcutaneous electrical nerve stimulation (TENS):</strong> Uses low-voltage currents to disrupt pain signals</li>
-                </ul>
-            </div>
-            
-            <div class="treatment-options">
-                <h3>Natural Remedies</h3>
-                <ul>
-                    <li><strong>Alpha-lipoic acid:</strong> Powerful antioxidant shown to improve nerve conduction</li>
-                    <li><strong>Acetyl-L-carnitine:</strong> Supports nerve regeneration and mitochondrial function</li>
-                    <li><strong>Curcumin:</strong> Reduces inflammation associated with nerve pain</li>
-                    <li><strong>Magnesium:</strong> Calms overactive nerve signals causing tingling</li>
-                </ul>
-            </div>
-            
-            <div class="treatment-options">
-                <h3>Lifestyle Modifications</h3>
-                <ul>
-                    <li><strong>Blood sugar control:</strong> Critical for diabetic neuropathy</li>
-                    <li><strong>Regular exercise:</strong> Improves circulation and nerve oxygenation</li>
-                    <li><strong>Stress reduction:</strong> Chronic stress exacerbates neuropathic pain</li>
-                    <li><strong>Foot care:</strong> Prevents complications in numb extremities</li>
-                </ul>
-            </div>
-            
-            <p>While medications can provide temporary relief, they often come with side effects like dizziness, drowsiness, and dependency risks. Natural approaches focus on supporting the body's innate healing capacity without these drawbacks.</p>
-        </section>
-        
-        <section id="ingredients">
-            <h2>The Science-Backed Ingredients in AriaLief</h2>
-            <p>AriaLief combines clinically-proven ingredients at optimal dosages to address neuropathy from multiple angles. Each component was selected based on rigorous scientific research demonstrating efficacy for nerve health.</p>
-            
-            <div class="ingredient-cards">
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://greenessencei.github.io/greenessencei/image/magnesium-glycinate-magnesium-supplement-muscle-relaxation-sleep-support.webp" alt="Magnesium Glycinate for nerve calming and muscle relaxation" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h3>Magnesium Glycinate (200mg)</h3>
-                        <p>This highly bioavailable form of magnesium acts as a natural nerve calmer by regulating calcium channels in nerve cells. Studies show it can reduce neuropathic pain intensity by up to 40% when used consistently.</p>
-                        <p><strong>Key Benefit:</strong> Reduces nerve excitability causing tingling and muscle cramps.</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://greenessencei.github.io/greenessencei/image/alpha-lipoic-acid-antioxidant-energy-metabolism-nerve-health-blood-sugar-.webp" alt="Alpha-Lipoic Acid for nerve protection and regeneration" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h3>Alpha-Lipoic Acid (300mg)</h3>
-                        <p>A potent antioxidant that neutralizes free radicals damaging nerve cells. Clinical trials demonstrate ALA improves nerve conduction velocity and reduces burning pain in diabetic neuropathy patients.</p>
-                        <p><strong>Key Benefit:</strong> Protects nerves from oxidative stress while supporting regeneration.</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://greenessencei.github.io/greenessencei/image/turmeric-curcumin-anti-inflammatory-antioxidant-joint-health-digestion-support.webp" alt="Turmeric Curcumin for nerve inflammation reduction" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h3>Turmeric Curcumin (150mg)</h3>
-                        <p>Curcumin's powerful anti-inflammatory properties help reduce cytokines that irritate nerves. Research shows it can decrease neuropathic pain markers by up to 58% compared to placebo.</p>
-                        <p><strong>Key Benefit:</strong> Addresses neuroinflammation at its source.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="ingredient-cards">
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://greenessencei.github.io/greenessencei/image/palmitoylethanolamide-pea-natural-anti-inflammatory-pain-relief-nerve-health-immune.webp" alt="PEA for natural pain relief" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h3>Palmitoylethanolamide (400mg)</h3>
-                        <p>Palmitoylethanolamide is an endogenous fatty acid that modulates pain perception. Multiple studies confirm its effectiveness for reducing chronic neuropathic pain without side effects.</p>
-                        <p><strong>Key Benefit:</strong> Naturally calms overactive pain signals in nerves.</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://greenessencei.github.io/greenessencei/image/coenzyme-q10-ubiquinone-ubiquinol-antioxidant-heart-health-energy-production.webp" alt="CoQ10 for nerve cell energy" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h3>L-Carnitine & CoQ10</h3>
-                        <p>This combination supports mitochondrial function in nerve cells. Research shows they can improve nerve regeneration markers by 37% in peripheral neuropathy patients.</p>
-                        <p><strong>Key Benefit:</strong> Provides energy for nerve repair processes.</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://greenessencei.github.io/greenessencei/image/butcher's-broom-circulation-support-leg-health-hemorrhoid%20-relief.jpg" alt="Butcher's Broom for nerve circulation" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h3>Butcher's Broom</h3>
-                        <p>Contains ruscogenins that strengthen blood vessels and improve microcirculation to extremities—critical for delivering nutrients to damaged nerves.</p>
-                        <p><strong>Key Benefit:</strong> Enhances blood flow to peripheral nerves.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="science-section">
-                <h3>The Science Behind AriaLief's Formula</h3>
-                <p>Recent clinical studies validate the synergistic effects of AriaLief's key ingredients:</p>
-                <ul>
-                    <li>A 2022 meta-analysis in <em>Pain Research and Management</em> found alpha-lipoic acid significantly improved nerve conduction velocity (NCV) in diabetic neuropathy patients (p<0.01)</li>
-                    <li>Research in <em>Neurotherapeutics</em> demonstrated PEA's ability to reduce neuropathic pain by modulating mast cell activation and cytokine release</li>
-                    <li>A double-blind study published in <em>Nutrition Journal</em> showed magnesium glycinate reduced neuropathic pain scores by 39% compared to placebo</li>
-                    <li><em>Phytotherapy Research</em> reported curcumin's ability to decrease TNF-α and IL-6 (inflammatory markers) in nerve tissue by up to 58%</li>
-                </ul>
-                <p>By combining these evidence-based ingredients, AriaLief addresses neuropathy through four mechanisms: reducing inflammation, protecting against oxidative damage, improving nerve conduction, and supporting regeneration.</p>
-            </div>
-        </section>
-        
-        <section id="solution">
-            <h2>Why AriaLief Stands Out for Neuropathy Relief</h2>
-            <p>Unlike single-ingredient solutions that address only one aspect of neuropathy, AriaLief's comprehensive formula works on multiple pathways simultaneously:</p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>1. Inflammation Control</h3>
-                    <p>PEA and curcumin target multiple inflammatory pathways specific to nerve tissue without suppressing the entire immune system</p>
-                </div>
-                <div class="feature-card">
-                    <h3>2. Oxidative Defense</h3>
-                    <p>ALA and CoQ10 provide layered antioxidant protection against free radicals damaging nerve cells</p>
-                </div>
-                <div class="feature-card">
-                    <h3>3. Nerve Repair</h3>
-                    <p>L-Carnitine fuels the regeneration process by optimizing mitochondrial function in nerve cells</p>
-                </div>
-                <div class="feature-card">
-                    <h3>4. Symptom Relief</h3>
-                    <p>Magnesium and Butcher's Broom provide immediate support for tingling, pain, and circulation issues</p>
-                </div>
-            </div>
-            
-            <h3>Clinical Results from AriaLief Users</h3>
-            <p>In a 90-day survey of AriaLief customers reporting various types of neuropathy:</p>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">83%</div>
-                    <p>reduced tingling/burning sensations</p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">76%</div>
-                    <p>improved sleep quality</p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">68%</div>
-                    <p>better balance and mobility</p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">91%</div>
-                    <p>would recommend AriaLief</p>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin: 4rem 0;">
-                <a href="https://bg.arialief.com/?aff_id=50459" rel="nofollow noopener" class="btn btn-secondary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Try AriaLief Risk-Free</a>
-            </div>
-        </section>
-    </main>
-    
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Take Control of Your Nerve Health Today</h2>
-                <p>AriaLief offers a science-backed, multi-targeted approach to neuropathy that goes beyond temporary symptom relief. By addressing the root causes of nerve discomfort, it helps create optimal conditions for your body to heal naturally.</p>
-                
-                <div class="benefits-list">
-                    <ul>
-                        <li>Formulated based on clinical research</li>
-                        <li>Pharmaceutical-grade manufacturing standards</li>
-                        <li>No artificial fillers or unnecessary additives</li>
-                        <li>Transparent labeling with exact dosages</li>
-                        <li>90-day satisfaction guarantee</li>
-                    </ul>
-                </div>
-                
-                <div style="margin-top: 3rem;">
-                    <a href="https://bg.arialief.com/?aff_id=50459" rel="nofollow noopener" class="btn">Reclaim Your Comfort with AriaLief</a>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">Science-Backed Solutions</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Neuropathy Relief: Natural Solutions That Work</h1>
+                <p class="text-xl text-gray-700 mb-8">Discover the clinically-proven ingredients that help reduce nerve pain, improve circulation, and support nerve regeneration.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#ingredients" class="px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition duration-300">Explore Ingredients</a>
+                    <a href="#results" class="px-8 py-3 border-2 border-green-600 text-green-700 hover:bg-green-50 font-medium rounded-lg transition duration-300">See Results</a>
                 </div>
             </div>
         </div>
     </section>
-    
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Green Essence</h3>
-                    <p>Your trusted source for science-backed natural health solutions and holistic wellness approaches.</p>
+
+    <!-- Understanding Neuropathy Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">Understanding Neuropathy: Causes and Risk Factors</h2>
+                <p class="text-lg text-gray-600 mb-8">Neuropathy, or nerve damage, affects approximately 20 million Americans, with symptoms ranging from mild tingling to debilitating pain.</p>
+                
+                <div class="bg-green-50 rounded-xl p-6 mb-10 border border-green-100">
+                    <h3 class="text-xl font-semibold text-green-800 mb-4">Common Causes of Neuropathy</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white p-5 rounded-lg shadow-sm">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-vial text-green-600"></i>
+                                </div>
+                                <h4 class="font-semibold text-lg">Diabetes</h4>
+                            </div>
+                            <p class="text-gray-700">High blood sugar damages nerve fibers, causing diabetic neuropathy—the most common type affecting 60-70% of diabetics.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-lg shadow-sm">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-apple-alt text-green-600"></i>
+                                </div>
+                                <h4 class="font-semibold text-lg">Vitamin Deficiencies</h4>
+                            </div>
+                            <p class="text-gray-700">Lack of B vitamins (especially B12), vitamin E, and niacin can impair nerve function and repair mechanisms.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-lg shadow-sm">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-allergies text-green-600"></i>
+                                </div>
+                                <h4 class="font-semibold text-lg">Autoimmune Diseases</h4>
+                            </div>
+                            <p class="text-gray-700">Conditions like rheumatoid arthritis and lupus cause inflammation that attacks nerve tissues.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-lg shadow-sm">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-pills text-green-600"></i>
+                                </div>
+                                <h4 class="font-semibold text-lg">Toxins & Medications</h4>
+                            </div>
+                            <p class="text-gray-700">Chemotherapy drugs, alcohol abuse, and heavy metal exposure can be neurotoxic.</p>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#about">Understanding Neuropathy</a></li>
-                        <li><a href="#symptoms">Symptoms</a></li>
-                        <li><a href="#treatments">Treatments</a></li>
-                        <li><a href="#ingredients">Key Ingredients</a></li>
-                        <li><a href="#solution">AriaLief Solution</a></li>
+                <p class="text-gray-700 mb-6">Other risk factors include physical trauma, repetitive stress injuries, infections (like shingles), and genetic predispositions. Understanding the underlying cause is crucial for effective treatment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Symptoms Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Neuropathy Symptoms: Recognizing Nerve Damage</h2>
+                <p class="text-lg text-gray-600 mb-8">Neuropathy symptoms vary depending on which nerves are affected (sensory, motor, or autonomic) and may develop gradually or appear suddenly.</p>
+                
+                <div class="grid md:grid-cols-3 gap-6 mb-10">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-green-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                                <i class="fas fa-hand-paper text-green-600 text-xl"></i>
+                            </div>
+                            <h3 class="font-semibold text-lg">Sensory Symptoms</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Tingling or "pins and needles"</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Burning or freezing pain</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Hypersensitivity to touch</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Numbness in hands/feet</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-blue-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                                <i class="fas fa-running text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="font-semibold text-lg">Motor Symptoms</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                <span>Muscle weakness</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                <span>Loss of coordination</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                <span>Muscle twitching</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                <span>Paralysis (severe cases)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-purple-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+                                <i class="fas fa-heartbeat text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="font-semibold text-lg">Autonomic Symptoms</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-2"></i>
+                                <span>Blood pressure fluctuations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-2"></i>
+                                <span>Digestive issues</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-2"></i>
+                                <span>Excessive sweating</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-2"></i>
+                                <span>Bladder dysfunction</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-exclamation-circle text-yellow-500 text-2xl mt-1"></i>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-yellow-700">Many patients describe neuropathy pain as a constant burning sensation, electric shocks, or the feeling of wearing an invisible glove or sock. Symptoms often worsen at night, significantly impacting sleep quality and daily functioning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Options -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Neuropathic Pain Treatment Options</h2>
+                <p class="text-lg text-gray-600 mb-8">Effective neuropathy management typically requires a multi-modal approach addressing both symptoms and underlying causes.</p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="bg-green-600 px-6 py-4">
+                            <h3 class="text-xl font-semibold text-white">Medical Treatments</h3>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-prescription-bottle-alt text-green-600 mt-1"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <h4 class="font-medium text-gray-900">Prescription medications</h4>
+                                        <p class="text-gray-600 text-sm">Anticonvulsants (gabapentin, pregabalin), antidepressants (duloxetine), and topical creams</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-heartbeat text-green-600 mt-1"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <h4 class="font-medium text-gray-900">Physical therapy</h4>
+                                        <p class="text-gray-600 text-sm">Improves strength, balance, and circulation to affected areas</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-bolt text-green-600 mt-1"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <h4 class="font-medium text-gray-900">TENS therapy</h4>
+                                        <p class="text-gray-600 text-sm">Uses low-voltage currents to disrupt pain signals</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="bg-blue-600 px-6 py-4">
+                            <h3 class="text-xl font-semibold text-white">Natural Remedies</h3>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-atom text-blue-600 mt-1"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <h4 class="font-medium text-gray-900">Alpha-lipoic acid</h4>
+                                        <p class="text-gray-600 text-sm">Powerful antioxidant shown to improve nerve conduction</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-dna text-blue-600 mt-1"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <h4 class="font-medium text-gray-900">Acetyl-L-carnitine</h4>
+                                        <p class="text-gray-600 text-sm">Supports nerve regeneration and mitochondrial function</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-spa text-blue-600 mt-1"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <h4 class="font-medium text-gray-900">Curcumin</h4>
+                                        <p class="text-gray-600 text-sm">Reduces inflammation associated with nerve pain</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="bg-purple-600 px-6 py-4">
+                            <h3 class="text-xl font-semibold text-white">Lifestyle Modifications</h3>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-chart-line text-purple-600 mt-1"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <h4 class="font-medium text-gray-900">Blood sugar control</h4>
+                                        <p class="text-gray-600 text-sm">Critical for diabetic neuropathy</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-walking text-purple-600 mt-1"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <h4 class="font-medium text-gray-900">Regular exercise</h4>
+                                        <p class="text-gray-600 text-sm">Improves circulation and nerve oxygenation</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-heart text-purple-600 mt-1"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <h4 class="font-medium text-gray-900">Stress reduction</h4>
+                                        <p class="text-gray-600 text-sm">Chronic stress exacerbates neuropathic pain</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <p class="text-gray-700"><span class="font-semibold">Note:</span> While medications can provide temporary relief, they often come with side effects like dizziness, drowsiness, and dependency risks. Natural approaches focus on supporting the body's innate healing capacity without these drawbacks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section id="ingredients" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">The Science-Backed Ingredients in AriaLief</h2>
+                <p class="text-xl text-gray-600">AriaLief combines clinically-proven ingredients at optimal dosages to address neuropathy from multiple angles.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Magnesium Glycinate -->
+                <div class="ingredient-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <img src="https://greenessencei.github.io/greenessencei/image/magnesium-glycinate-magnesium-supplement-muscle-relaxation-sleep-support.webp" alt="Magnesium Glycinate" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-gray-900">Magnesium Glycinate (200mg)</h3>
+                            <span class="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">Nerve Calming</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">This highly bioavailable form of magnesium acts as a natural nerve calmer by regulating calcium channels in nerve cells.</p>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <p class="text-green-800 font-medium">Key Benefit: Reduces nerve excitability causing tingling and muscle cramps.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Alpha-Lipoic Acid -->
+                <div class="ingredient-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <img src="https://greenessencei.github.io/greenessencei/image/alpha-lipoic-acid-antioxidant-energy-metabolism-nerve-health-blood-sugar-.webp" alt="Alpha-Lipoic Acid" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-gray-900">Alpha-Lipoic Acid (300mg)</h3>
+                            <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold">Antioxidant</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">A potent antioxidant that neutralizes free radicals damaging nerve cells. Clinical trials demonstrate ALA improves nerve conduction velocity.</p>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="text-blue-800 font-medium">Key Benefit: Protects nerves from oxidative stress while supporting regeneration.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Turmeric Curcumin -->
+                <div class="ingredient-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-yellow-100 flex items-center justify-center">
+                        <img src="https://greenessencei.github.io/greenessencei/image/turmeric-curcumin-anti-inflammatory-antioxidant-joint-health-digestion-support.webp" alt="Turmeric Curcumin" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-gray-900">Turmeric Curcumin (150mg)</h3>
+                            <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-semibold">Anti-inflammatory</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Curcumin's powerful anti-inflammatory properties help reduce cytokines that irritate nerves.</p>
+                        <div class="bg-yellow-50 p-4 rounded-lg">
+                            <p class="text-yellow-800 font-medium">Key Benefit: Addresses neuroinflammation at its source.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PEA -->
+                <div class="ingredient-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-purple-100 flex items-center justify-center">
+                        <img src="https://greenessencei.github.io/greenessencei/image/palmitoylethanolamide-pea-natural-anti-inflammatory-pain-relief-nerve-health-immune.webp" alt="Palmitoylethanolamide" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-gray-900">Palmitoylethanolamide (400mg)</h3>
+                            <span class="inline-block px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-semibold">Pain Relief</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Palmitoylethanolamide is an endogenous fatty acid that modulates pain perception.</p>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <p class="text-purple-800 font-medium">Key Benefit: Naturally calms overactive pain signals in nerves.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CoQ10 -->
+                <div class="ingredient-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-red-100 flex items-center justify-center">
+                        <img src="https://greenessencei.github.io/greenessencei/image/coenzyme-q10-ubiquinone-ubiquinol-antioxidant-heart-health-energy-production.webp" alt="Coenzyme Q10" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-gray-900">L-Carnitine & CoQ10</h3>
+                            <span class="inline-block px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs font-semibold">Energy</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">This combination supports mitochondrial function in nerve cells.</p>
+                        <div class="bg-red-50 p-4 rounded-lg">
+                            <p class="text-red-800 font-medium">Key Benefit: Provides energy for nerve repair processes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Butcher's Broom -->
+                <div class="ingredient-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-indigo-100 flex items-center justify-center">
+                        <img src="https://greenessencei.github.io/greenessencei/image/butcher's-broom-circulation-support-leg-health-hemorrhoid%20-relief.jpg" alt="Butcher's Broom" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-gray-900">Butcher's Broom</h3>
+                            <span class="inline-block px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-xs font-semibold">Circulation</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Contains ruscogenins that strengthen blood vessels and improve microcirculation to extremities.</p>
+                        <div class="bg-indigo-50 p-4 rounded-lg">
+                            <p class="text-indigo-800 font-medium">Key Benefit: Enhances blood flow to peripheral nerves.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Science Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">The Science Behind AriaLief's Formula</h2>
+                    <p class="text-xl text-gray-600">Recent clinical studies validate the synergistic effects of AriaLief's key ingredients</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 mb-8">
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-gray-800">A 2022 meta-analysis in <span class="font-semibold">Pain Research and Management</span> found alpha-lipoic acid significantly improved nerve conduction velocity (NCV) in diabetic neuropathy patients (p&lt;0.01)</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-gray-800">Research in <span class="font-semibold">Neurotherapeutics</span> demonstrated PEA's ability to reduce neuropathic pain by modulating mast cell activation and cytokine release</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-gray-800">A double-blind study published in <span class="font-semibold">Nutrition Journal</span> showed magnesium glycinate reduced neuropathic pain scores by 39% compared to placebo</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-gray-800"><span class="font-semibold">Phytotherapy Research</span> reported curcumin's ability to decrease TNF-α and IL-6 (inflammatory markers) in nerve tissue by up to 58%</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 
-                <div class="footer-column">
-                    <h3>Contact</h3>
-                    <p>Have questions about neuropathy or AriaLief? We're here to help with science-based information.</p>
-                    <p>Email: info@greenessence.com</p>
+                <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
+                    <p class="text-green-800 font-medium">By combining these evidence-based ingredients, AriaLief addresses neuropathy through four mechanisms: reducing inflammation, protecting against oxidative damage, improving nerve conduction, and supporting regeneration.</p>
                 </div>
             </div>
-            
-            <div class="copyright">
-                <p>&copy; 2025 Green Essence. All rights reserved.</p>
-                <p><small>Note: The information provided on this website is for educational purposes only and is not intended as medical advice. Always consult with a healthcare professional before starting any new treatment.</small></p>
+        </div>
+    </section>
+
+    <!-- Why AriaLief Section -->
+    <section id="results" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Why AriaLief Stands Out for Neuropathy Relief</h2>
+                <p class="text-xl text-gray-600 mb-12 text-center">Unlike single-ingredient solutions that address only one aspect of neuropathy, AriaLief's comprehensive formula works on multiple pathways simultaneously</p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-green-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-4">
+                                <i class="fas fa-fire-extinguisher text-green-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Inflammation Control</h3>
+                        </div>
+                        <p class="text-gray-700">PEA and curcumin target multiple inflammatory pathways specific to nerve tissue without suppressing the entire immune system</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-blue-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                                <i class="fas fa-shield-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Oxidative Defense</h3>
+                        </div>
+                        <p class="text-gray-700">ALA and CoQ10 provide layered antioxidant protection against free radicals damaging nerve cells</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-purple-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mr-4">
+                                <i class="fas fa-band-aid text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Nerve Repair</h3>
+                        </div>
+                        <p class="text-gray-700">L-Carnitine fuels the regeneration process by optimizing mitochondrial function in nerve cells</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-yellow-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center mr-4">
+                                <i class="fas fa-heartbeat text-yellow-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Symptom Relief</h3>
+                        </div>
+                        <p class="text-gray-700">Magnesium and Butcher's Broom provide immediate support for tingling, pain, and circulation issues</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="bg-gradient-to-r from-green-600 to-blue-600 px-6 py-4">
+                        <h3 class="text-xl font-semibold text-white text-center">Clinical Results from AriaLief Users</h3>
+                        <p class="text-green-100 text-center">In a 90-day survey of AriaLief customers reporting various types of neuropathy</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid md:grid-cols-4 gap-4">
+                            <div class="stats-item py-4">
+                                <div class="text-center">
+                                    <p class="text-4xl font-bold text-green-600 mb-2">83%</p>
+                                    <p class="text-gray-700">reduced tingling/burning sensations</p>
+                                </div>
+                            </div>
+                            <div class="stats-item py-4">
+                                <div class="text-center">
+                                    <p class="text-4xl font-bold text-blue-600 mb-2">76%</p>
+                                    <p class="text-gray-700">improved sleep quality</p>
+                                </div>
+                            </div>
+                            <div class="stats-item py-4">
+                                <div class="text-center">
+                                    <p class="text-4xl font-bold text-purple-600 mb-2">68%</p>
+                                    <p class="text-gray-700">better balance and mobility</p>
+                                </div>
+                            </div>
+                            <div class="stats-item py-4">
+                                <div class="text-center">
+                                    <p class="text-4xl font-bold text-yellow-600 mb-2">91%</p>
+                                    <p class="text-gray-700">would recommend AriaLief</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Ready to Experience Neuropathy Relief?</h2>
+                <p class="text-xl text-gray-700 mb-8">Take the first step toward better nerve health with AriaLief's science-backed formula.</p>
+                <a href="#" class="inline-block px-10 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg text-lg transition duration-300 shadow-lg">Get AriaLief Now</a>
+                <p class="text-gray-600 mt-4 text-sm">60-day money back guarantee • Free shipping on all orders</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-leaf text-2xl text-green-400 mr-2"></i>
+                        <span class="text-xl font-bold text-white">GreenEssencei</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Science-backed natural solutions for better health and wellness.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Products</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Research</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">AriaLief</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">NeuroCalm</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">JointFlex</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">ImmuneBoost</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-green-400"></i>
+                            <span class="text-gray-400">123 Wellness Way, Portland, OR 97201</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-2 text-green-400"></i>
+                            <span class="text-gray-400">(800) 555-1234</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2 text-green-400"></i>
+                            <span class="text-gray-400">support@greenessencei.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 GreenEssencei. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-gray-300 text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-300 text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-300 text-sm">Shipping Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-300 text-sm">Returns</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts não críticos carregados no final -->
     <script>
-        // Carregar fontes após a renderização inicial
-        if ('fonts' in document) {
-            document.fonts.load('1em Open Sans').then(function() {
-                document.body.classList.add('fonts-loaded');
-            });
-        }
-        
-        // Otimização para imagens lazy
+        // Simple script for mobile menu toggle if needed
         document.addEventListener('DOMContentLoaded', function() {
-            const lazyImages = [].slice.call(document.querySelectorAll('img[loading="lazy"]'));
+            const mobileMenuButton = document.querySelector('.md\\:hidden');
+            const navMenu = document.querySelector('nav');
             
-            if ('IntersectionObserver' in window) {
-                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-                    entries.forEach(function(entry) {
-                        if (entry.isIntersecting) {
-                            let lazyImage = entry.target;
-                            lazyImage.src = lazyImage.dataset.src;
-                            lazyImageObserver.unobserve(lazyImage);
-                        }
-                    });
-                });
-
-                lazyImages.forEach(function(lazyImage) {
-                    lazyImageObserver.observe(lazyImage);
-                });
-            }
+            mobileMenuButton.addEventListener('click', function() {
+                navMenu.classList.toggle('hidden');
+            });
         });
     </script>
 </body>
