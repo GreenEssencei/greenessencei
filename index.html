@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJZFYXEW6D"></script>
+    <!-- Meta Tags Essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Pré-conexões para melhor performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://greenessencei.github.io">
+    
+    <!-- Pré-carregamento de recursos críticos -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="image" href="https://greenessencei.github.io/greenessencei/image/nerve-health-support-neuropathy-relief-nerve-supplement.webp">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"></noscript>
+    
+    <!-- Google Analytics Otimizado -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-EJZFYXEW6D');
+        document.addEventListener('DOMContentLoaded', function() {
+            var script = document.createElement('script');
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-EJZFYXEW6D';
+            script.async = true;
+            document.head.appendChild(script);
+            gtag('js', new Date());
+            gtag('config', 'G-EJZFYXEW6D');
+        });
     </script>
     
     <meta name="google-site-verification" content="dS_2kFBEn_lCXXtPWlErXA3Bt5L3B66CEoH9yTyMb1w" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Plant-based supplement for nerve pain. 100% natural ingredients like alpha-lipoic acid, turmeric, and magnesium glycinate to relieve neuropathy symptoms and support nerve regeneration.">
     <meta name="keywords" content="neuropathic pain treatment, nerve damage solutions, natural neuropathy relief, AriaLief review, sciatica remedies, nerve regeneration supplements">
     <meta name="author" content="GreenEssencei">
@@ -36,11 +55,6 @@
     <link rel="canonical" href="https://greenessencei.github.io/greenessencei/">
     <title>Neuropathy Treatment: Natural Solutions for Nerve Pain Relief | Green Essence</title>
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -61,6 +75,7 @@
     }
     </script>
     
+    <!-- CSS Inline Crítico -->
     <style>
         :root {
             --primary: #4a8b4c;
@@ -78,10 +93,16 @@
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: system-ui, -apple-system, sans-serif;
             line-height: 1.6;
             color: var(--text);
             background-color: var(--light);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         
         header {
@@ -89,12 +110,6 @@
             color: white;
             padding: 1rem 0;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
         }
         
         .header-content {
@@ -159,6 +174,7 @@
             font-size: 2.5rem;
             margin-bottom: 1rem;
             line-height: 1.2;
+            font-family: 'Poppins', sans-serif;
         }
         
         .hero p {
@@ -427,9 +443,32 @@
                 font-size: 2rem;
             }
         }
+        
+        /* Otimizações de performance */
+        @font-face {
+            font-family: 'Poppins';
+            font-display: swap;
+        }
+        
+        * {
+            will-change: transform, opacity;
+        }
+        
+        .card-img img {
+            width: 100%;
+            height: 200px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
+    <!-- Imagem LCP pré-carregada -->
+    <img src="https://greenessencei.github.io/greenessencei/image/nerve-health-support-neuropathy-relief-nerve-supplement.webp" 
+         alt="Natural neuropathy relief" 
+         style="display:none" 
+         fetchpriority="high">
+    
     <header>
         <div class="container">
             <div class="header-content">
@@ -491,7 +530,7 @@
             
             <div class="symptoms-grid">
                 <div class="symptom-card">
-                    <h1>Sensory Changes</h1>
+                    <h4>Sensory Symptoms</h4>
                     <ul>
                         <li>Tingling or "pins and needles"</li>
                         <li>Burning or freezing pain</li>
@@ -500,7 +539,7 @@
                     </ul>
                 </div>
                 <div class="symptom-card">
-                    <h2>Motor Symptoms</h2>
+                    <h4>Motor Symptoms</h4>
                     <ul>
                         <li>Muscle weakness</li>
                         <li>Loss of coordination</li>
@@ -509,7 +548,7 @@
                     </ul>
                 </div>
                 <div class="symptom-card">
-                    <h3>Autonomic Symptoms</h3>
+                    <h4>Autonomic Symptoms</h4>
                     <ul>
                         <li>Blood pressure fluctuations</li>
                         <li>Digestive issues</li>
@@ -636,10 +675,10 @@
                 <h3>The Science Behind AriaLief's Formula</h3>
                 <p>Recent clinical studies validate the synergistic effects of AriaLief's key ingredients:</p>
                 <ul>
-                    <li>A 2022 meta-analysis in <em>Pain Research and Management</em> found alpha-lipoic acid significantly improved nerve conduction velocity (NCV) in diabetic neuropathy patients (p<0.01) [1]</li>
-                    <li>Research in <em>Neurotherapeutics</em> demonstrated PEA's ability to reduce neuropathic pain by modulating mast cell activation and cytokine release [2]</li>
-                    <li>A double-blind study published in <em>Nutrition Journal</em> showed magnesium glycinate reduced neuropathic pain scores by 39% compared to placebo [3]</li>
-                    <li><em>Phytotherapy Research</em> reported curcumin's ability to decrease TNF-α and IL-6 (inflammatory markers) in nerve tissue by up to 58% [4]</li>
+                    <li>A 2022 meta-analysis in <em>Pain Research and Management</em> found alpha-lipoic acid significantly improved nerve conduction velocity (NCV) in diabetic neuropathy patients (p<0.01)</li>
+                    <li>Research in <em>Neurotherapeutics</em> demonstrated PEA's ability to reduce neuropathic pain by modulating mast cell activation and cytokine release</li>
+                    <li>A double-blind study published in <em>Nutrition Journal</em> showed magnesium glycinate reduced neuropathic pain scores by 39% compared to placebo</li>
+                    <li><em>Phytotherapy Research</em> reported curcumin's ability to decrease TNF-α and IL-6 (inflammatory markers) in nerve tissue by up to 58%</li>
                 </ul>
                 <p>By combining these evidence-based ingredients, AriaLief addresses neuropathy through four mechanisms: reducing inflammation, protecting against oxidative damage, improving nerve conduction, and supporting regeneration.</p>
             </div>
@@ -736,6 +775,22 @@
                         <li><a href="#solution">AriaLief Solution</a></li>
                     </ul>
                 </div>
+                
+                <div class="footer-column">
+                    <h3>Scientific References</h3>
+                    <ul class="reference-list">
+                        <li>Magnesium for Neuropathic Pain:
+                            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7761987/" target="_blank">PMC7761987</a>
+                        </li>
+                        <li>Alpha-Lipoic Acid:
+                            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8707266/" target="_blank">PMC8707266</a>
+                        </li>
+                        <li>Curcumin Research:
+                            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7571082/" target="_blank">PMC7571082</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             
             <div class="copyright">
                 <p>&copy; 2025 Green Essencei. All rights reserved.</p>
@@ -743,5 +798,36 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scripts não críticos carregados no final -->
+    <script>
+        // Carregar fontes após a renderização inicial
+        if ('fonts' in document) {
+            document.fonts.load('1em Poppins').then(function() {
+                document.body.classList.add('fonts-loaded');
+            });
+        }
+        
+        // Otimização para imagens lazy
+        document.addEventListener('DOMContentLoaded', function() {
+            const lazyImages = [].slice.call(document.querySelectorAll('img[loading="lazy"]'));
+            
+            if ('IntersectionObserver' in window) {
+                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            let lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+                
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
